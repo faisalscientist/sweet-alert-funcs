@@ -1,6 +1,6 @@
 {
   "name": "sweet-alert-funcs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple typescipt package contain simplified sweet-alert function calls",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
