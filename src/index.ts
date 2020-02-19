@@ -1,16 +1,16 @@
-import Swal, { SweetAlertResult, SweetAlertIcon } from "sweetalert2";
+import Swal, { SweetAlertResult, SweetAlertIcon } from 'sweetalert2';
 
 export default class SweetalertService {
-  showErrorMessage(title: string, message: string, redirect = "") {
-    this.showAlert(title, message, redirect, "error");
+  showErrorMessage(title: string, message: string, redirect = '') {
+    return this.showAlert(title, message, redirect, 'error');
   }
 
-  showInfoMessage(title: string, message: string, redirect = "") {
-    this.showAlert(title, message, redirect, "info");
+  showInfoMessage(title: string, message: string, redirect = '') {
+    return this.showAlert(title, message, redirect, 'info');
   }
 
-  showSuccessMessage(title: string, message: string, redirect = "") {
-    this.showAlert(title, message, redirect, "success");
+  showSuccessMessage(title: string, message: string, redirect = '') {
+    return this.showAlert(title, message, redirect, 'success');
   }
 
   showPleaseWait(message: string) {
@@ -25,7 +25,7 @@ export default class SweetalertService {
   showAlert(
     title: string,
     message: string,
-    redirect: string = "",
+    redirect: string = '',
     type: SweetAlertIcon
   ) {
     return Swal.fire({
